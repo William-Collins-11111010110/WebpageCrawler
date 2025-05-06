@@ -72,7 +72,7 @@ def main():
 
     fieldnames = ['url', 'status_code', 'title', 'content_type', 'num_links']
 
-    with open('output.csv', 'w', newline='') as csvfile:
+    with open('crawl.csv', 'w', newline='') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for key, row in list_of_pages.items():
